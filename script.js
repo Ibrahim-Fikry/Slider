@@ -5,8 +5,15 @@ var closebtn = document.getElementById('btn-close')
 var rightbtn = document.getElementById('btn-right')
 var leftbtn = document.getElementById('btn-left')
 var imgcontainer = document.getElementById('imgcontainer')
-imgcontainer.addEventListener('click', () => {
-    fixedbox.classList.replace('d-none', 'd-flex')
+imgcontainer.addEventListener('click', (e) => {
+
+    var clickedimg = e.target
+    var clickedimgsrc = clickedimg.getAttribute('src')
+    if (clickedimgsrc != null) {
+        innerimg.setAttribute('src', clickedimgsrc)
+        fixedbox.classList.replace('d-none', 'd-flex')
+    }
+
 })
 closebtn.addEventListener('click', () => {
     fixedbox.classList.replace('d-flex', 'd-none')
