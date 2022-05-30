@@ -1,3 +1,7 @@
+body {
+    background-image: url(images/1.png);
+}
+
 .layer {
     text-align: center;
     width: 70%;
@@ -24,7 +28,7 @@
 #btn-close {
     top: 10px;
     right: 10px;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: red;
 }
@@ -43,4 +47,8 @@
     font-size: 40px;
     cursor: pointer;
     color: rgb(255, 187, 0);
+}
+
+#imgcontainer img {
+    height: 300px;
 }
