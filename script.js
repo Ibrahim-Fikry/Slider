@@ -64,18 +64,10 @@ document.addEventListener('keyup', (e) => {
 
     if (fixedbox.getAttribute('class').includes("d-flex") == true) {
         if (e.key == "ArrowRight") {
-            ++selectedimgindex
-            if (selectedimgindex == selectedimg.length) {
-                selectedimgindex = 0
-            }
-            rightliftslider()
+            getnextslider()
 
         } else if (e.key == "ArrowLeft") {
-            --selectedimgindex
-            if (selectedimgindex < 0) {
-                selectedimgindex = selectedimg.length - 1
-            }
-            rightliftslider()
+            getprevslider()
 
         } else if (e.key == " ") {
             closeslid()
